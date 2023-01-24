@@ -15,4 +15,12 @@ public class MonitoringController {
         return state;
 
     }
+    @GetMapping("/api/message/reset")
+    public String Message1(){
+
+        this.state = "Everything works as expected";
+        return "ok";
+
+    }
+
 }
