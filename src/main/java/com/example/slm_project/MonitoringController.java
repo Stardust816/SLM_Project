@@ -6,12 +6,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MonitoringController {
 
+    public String state = "Everything works as expected";
+
+
     @GetMapping("/api/message")
+    public String Message(){
 
-    public String getMessage(){
-
-        return "Everything works as expected";
+        return state;
 
     }
-
 }
