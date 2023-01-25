@@ -23,4 +23,12 @@ public class MonitoringController {
 
     }
 
+    @GetMapping("/api/message/set")
+    public String Message2(String state){
+
+        this.state = state;
+        return "ok";
+
+    }
+
 }
